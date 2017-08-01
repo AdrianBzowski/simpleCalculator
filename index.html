@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+  <div class="main-container">
+    <div class="container">
+      
+      
+      <div class="container-buttons">
+        <form name="kalkulator">
+          
+          <input id="mainText" type="text" name="tekst" placeholder="..." value=''>
+          
+          <input class="przycisk" type="button" name="btn1" value="1" onclick="wyswietlLiczbe(btn1.value)">
+          <input class="przycisk" type="button" name="btn2" value="2" onclick="wyswietlLiczbe(btn2.value)">
+          <input class="przycisk" type="button" name="btn3" value="3" onclick="wyswietlLiczbe(btn3.value)">
+          <input class="przycisk" type="button" name="btn4" value="4" onclick="wyswietlLiczbe(btn4.value)">
+          <input class="przycisk" type="button" name="btn5" value="5" onclick="wyswietlLiczbe(btn5.value)">
+          <input class="przycisk" type="button" name="btn6" value="6" onclick="wyswietlLiczbe(btn6.value)">
+          <input class="przycisk" type="button" name="btn7" value="7" onclick="wyswietlLiczbe(btn7.value)">
+          <input class="przycisk" type="button" name="btn8" value="8" onclick="wyswietlLiczbe(btn8.value)">
+          <input class="przycisk" type="button" name="btn9" value="9" onclick="wyswietlLiczbe(btn9.value)">
+          <input class="przycisk" type="button" name="btn0" value="0" onclick="wyswietlLiczbe(btn0.value)">
+          <input class="przycisk" type="button" name="point" value="." onclick="wyswietlLiczbe(point.value)">
+          <input class="przycisk" type="button" name="reset" value="C" onclick="tekst.value= '' ">
+      
+          <input class="przycisk" type="button" name="addBtn" value=+ onclick="wyswietlLiczbe(addBtn.value)">
+          <input class="przycisk" type="button" name="minBtn" value=- onclick="wyswietlLiczbe(minBtn.value)">
+          <input class="przycisk" type="button" name="timesBtn" value=* onclick="wyswietlLiczbe(timesBtn.value)">
+          <input class="przycisk" type="button" name="divBtn" value=/ onclick="wyswietlLiczbe(divBtn.value)">
+          <input class="przycisk" type="button" name="eqBtn" value='=' onclick= 'tekst.value= eval(tekst.value)'>
+        </form>
+      </div>
+    </div>
+  </div>
+    
+    <script src="js/script.js"></script>
+  </body>
+</html>
